@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="CodeIgniter Application Test Suite" tests="3" assertions="3" failures="1" errors="0" time="0.038151">
+    <testsuite name="Welcome_test" file="B:\wamp\www\Eatatouille\application\tests\controllers\Welcome_test.php" tests="3" assertions="3" failures="1" errors="0" time="0.038151">
+      <testcase name="test_index" class="Welcome_test" file="B:\wamp\www\Eatatouille\application\tests\controllers\Welcome_test.php" line="13" assertions="1" time="0.019131">
+        <failure type="PHPUnit_Framework_ExpectationFailedException">Welcome_test::test_index
+Failed asserting that '&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+	&lt;meta charset="utf-8"&gt;
+	&lt;title&gt;Eatatouille&lt;/title&gt;
+
+	&lt;style type="text/css"&gt;
+
+	::selection { background-color: #E13300; color: white; }
+	::-moz-selection { background-color: #E13300; color: white; }
+
+	body {
+		background-color: #fff;
+		margin: 40px;
+		font: 13px/20px normal Helvetica, Arial, sans-serif;
+		color: #4F5155;
+	}
+
+	a {
+		color: #003399;
+		background-color: transparent;
+		font-weight: normal;
+	}
+
+	h1 {
+		color: #444;
+		background-color: transparent;
+		border-bottom: 1px solid #D0D0D0;
+		font-size: 19px;
+		font-weight: normal;
+		margin: 0 0 14px 0;
+		padding: 14px 15px 10px 15px;
+	}
+
+	code {
+		font-family: Consolas, Monaco, Courier New, Courier, monospace;
+		font-size: 12px;
+		background-color: #f9f9f9;
+		border: 1px solid #D0D0D0;
+		color: #002166;
+		display: block;
+		margin: 14px 0 14px 0;
+		padding: 12px 10px 12px 10px;
+	}
+
+	#body {
+		margin: 0 15px 0 15px;
+	}
+
+	p.footer {
+		text-align: right;
+		font-size: 11px;
+		border-top: 1px solid #D0D0D0;
+		line-height: 32px;
+		padding: 0 10px 0 10px;
+		margin: 20px 0 0 0;
+	}
+
+	#container {
+		margin: 10px;
+		border: 1px solid #D0D0D0;
+		box-shadow: 0 0 8px #D0D0D0;
+	}
+	&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div id="container"&gt;
+	&lt;h1&gt;Welcome to Eatatouille!&lt;/h1&gt;
+
+	&lt;div id="body"&gt;
+		&lt;p&gt;The page you are looking at is being generated dynamically by CodeIgniter.&lt;/p&gt;
+
+		&lt;p&gt;If you would like to edit this page you'll find it located at:&lt;/p&gt;
+		&lt;code&gt;application/views/welcome_message.php&lt;/code&gt;
+
+		&lt;p&gt;The corresponding controller for this page is found at:&lt;/p&gt;
+		&lt;code&gt;application/controllers/Welcome.php&lt;/code&gt;
+
+		&lt;p&gt;If you are exploring CodeIgniter for the very first time, you should start by reading the &lt;a href="user_guide/"&gt;User Guide&lt;/a&gt;.&lt;/p&gt;
+	&lt;/div&gt;
+
+	&lt;p class="footer"&gt;Page rendered in &lt;strong&gt;{elapsed_time}&lt;/strong&gt; seconds. &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;' contains "&lt;title&gt;Welcome to CodeIgniter&lt;/title&gt;".
+
+B:\wamp\www\Eatatouille\application\tests\controllers\Welcome_test.php:16
+</failure>
+      </testcase>
+      <testcase name="test_method_404" class="Welcome_test" file="B:\wamp\www\Eatatouille\application\tests\controllers\Welcome_test.php" line="19" assertions="1" time="0.009422"/>
+      <testcase name="test_APPPATH" class="Welcome_test" file="B:\wamp\www\Eatatouille\application\tests\controllers\Welcome_test.php" line="25" assertions="1" time="0.009598"/>
+    </testsuite>
+  </testsuite>
+</testsuites>
