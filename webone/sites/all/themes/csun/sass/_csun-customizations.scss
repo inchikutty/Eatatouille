@@ -1,0 +1,303 @@
+.node-person .person-bio-image {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.node-person .person-bio-profile {
+  float: left;
+  width: 550px;
+}
+.node-person .person-bio-body {
+  clear: both;
+  float: left;
+  margin-right: 10px;
+}
+
+/* Added by Kevin M.*/
+.field-item.even > div {
+  width:auto !important;
+}
+#calselect > p{
+  float:right;
+  margin-bottom: 0;
+  margin-right:34px;
+}
+
+#othcalsel > .button{
+  float:right;
+}
+.form-item.form-type-textfield.form-item-title{
+  margin:0;
+}
+.csun-view-calendar-events-cp-all-events > .date-nav-wrapper.clearfix{
+  visibility: hidden;
+}
+.csun-view-calendar-events-og-cp-all-events
+ > .date-nav-wrapper.clearfix{
+  visibility: hidden;
+}
+.finder-form-element.finder-form-element-title {
+    float: left;
+    width:65%;
+}
+.finder-form.finder-event_finder {
+    margin-bottom: 20px;
+}
+#edit-title{width:100%;}
+#edit-find{margin-left:10px;}
+
+/* Remove bullets from prev/next on full page calendar view */
+.date-nav-wrapper .date-prev, .date-nav-wrapper .date-next { list-style-type: none; } 
+
+/* Fix intermittent issue with current date NOT highlighted" */
+.calendar-calendar .mini .today .mini-day-off,
+.calendar-calendar .mini .today .mini-day-on {
+  background-color: #660000;
+  color: #FFFFFF;
+}
+.calendar-calendar .mini .today .mini-day-on a { color: #FFFFFF; }
+
+.hidden {
+  position:absolute;
+  left:-9999px;
+}
+
+/* secondary nav (menu block)  begin */
+
+.sidebar .pane-menu-tree h2.pane-title {
+  overflow: visible;
+  position: inherit !important;
+  width: auto;
+  padding-bottom: 25px;
+  font-size: 1.33333em;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  line-height: 1;
+  border-top: none;
+}
+
+.sidebar .panel-pane .menu-block-wrapper li {
+ padding: 0;
+}
+
+.sidebar .panel-pane .menu-block-wrapper li a {
+  margin: 0px;
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 35px;
+  border-bottom: 1px solid #D4C0C0;
+  padding-left: 5px;
+}
+
+.sidebar .panel-pane .menu-block-wrapper li a:hover,
+.sidebar .panel-pane .menu-block-wrapper li a:focus
+  {
+  color: white;
+  background: black;
+  text-decoration:none;
+  background-color: #222222;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #666666), color-stop(100%, #222222));
+  background: -webkit-linear-gradient(top, #666666 0%, #222222 100%);
+  background: -moz-linear-gradient(top, #666666 0%, #222222 100%);
+  background: -o-linear-gradient(top, #666666 0%, #222222 100%);
+  background: linear-gradient(top, #666666 0%, #222222 100%);
+}
+
+.sidebar .panel-pane .menu-block-wrapper ul li {
+  border-top: none;
+}
+
+.sidebar .panel-pane .menu-block-wrapper ul li ul li {
+  padding-left: 15px;
+  border-top: none;
+}
+
+.sidebar .panel-pane .menu-block-wrapper ul li ul li a:hover,
+.sidebar .panel-pane .menu-block-wrapper ul li ul li a:focus {
+  margin-left: -15px;
+  padding-left: 20px;
+  border-top: none;
+}
+
+.sidebar .panel-pane .menu-block-wrapper ul li ul li ul li {
+  padding-left: 20px;
+  border-top: none;
+}
+
+.sidebar .panel-pane .menu-block-wrapper ul li ul li ul li a:hover,
+.sidebar .panel-pane .menu-block-wrapper ul li ul li ul li a:focus {
+  margin-left: -35px;
+  padding-left: 40px;
+  border-top: none;
+}
+
+.sidebar .panel-pane ul li.menu--active > a {
+  color: white;
+  background-color: #850000;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8a0000), color-stop(100%, #480000));
+  background: -webkit-linear-gradient(top, #8a0000 0%, #480000 100%);
+  background: -moz-linear-gradient(top, #8a0000 0%, #480000 100%);
+  background: -o-linear-gradient(top, #8a0000 0%, #480000 100%);
+  background: linear-gradient(top, #8a0000 0%, #480000 100%);
+}
+
+.sidebar .panel-pane ul li ul li.menu--active a {
+  margin-left: -15px;
+  padding-left: 20px;
+  border-top: none;
+}
+
+.sidebar .panel-pane ul li ul li ul li.menu--active a {
+  margin-left: -35px;
+  padding-left: 40px;
+  border-top: none;
+}
+
+/* secondary nav (menu block)  end */
+
+/* WYSIWYG li correction begin */
+.sidebar .panel-pane ul li {
+  padding-bottom: 0;
+}
+
+.sidebar .panel-pane ul li a:hover {
+  text-decoration:underline;
+}
+/* WYSIWYG li correction end */
+
+/* Footer underline correction begin */
+.layout-csun--footer .column a:hover {
+  text-decoration:underline;
+}
+/* Footer underline correction end */
+
+.divider {
+  border-top: 3px solid #333333;
+  margin: 7px 0 15px;
+}
+
+/* EZ - Fix for mini-calendar at bottom of page */
+.view .date-nav-wrapper {
+  height: 50px;
+  .date-nav {
+    clear: none;
+    height: 30px;
+  }
+}
+
+/* NP Fix for MR tables */
+/*
+@media only screen and (max-width: 950px) {
+  tr td {
+    float: left;
+    clear: left;
+    border: none;
+  }
+}
+*/
+
+/* Alen's changes */
+#accordion-header-guide-at-message,
+#accordion-instruction-at-message {  // Make invisible
+   position: absolute;
+   clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* simple mobile targeted */
+
+body.node-type-simple-targeted-mobile div.panel-panel h1 {
+display: none;
+}
+
+body.node-type-simple-targeted-mobile div.layout-csun--footer {
+display: none;
+}
+
+.node-type-simple-targeted-mobile div.field-items {
+margin-left: -10px;
+margin-right: -10px;
+}
+
+.node-type-simple-targeted-mobile div.field-items p {
+margin: 0;
+}
+
+.node-type-simple-targeted-mobile div.field-items h2 {
+margin-top: 0;
+margin-bottom: 1px;
+line-height: 2.5em;
+font-weight: normal;
+color: #FFFFFF;
+background-color: #660000;
+font-family: museo_sans,Verdana,Tahoma,"DejaVu Sans",sans-serif;
+padding-left: 10px;
+}
+
+.node-type-simple-targeted-mobile div.field-name-body ul {
+color: #222222;
+background-color: #fff;
+list-style-type: disc;
+font: 16px/1.33em museo-sans,sans-serif;
+margin-top: 0;
+padding: 0;
+margin: 10px 0;
+position: relative;
+display: block;
+line-height: 1.33em;
+border:1px solid #c0c0c0;
+}
+
+.node-type-simple-targeted-mobile div.field-name-body ul img {
+float:left;
+margin:-17px;
+padding-right:25px;
+height:55px;
+}
+
+.node-type-simple-targeted-mobile div.field-name-body ul li {
+padding: 18px;
+list-style-type: none;
+border-color: #c0c0c0;
+word-wrap: break-word;
+border-top: 1px solid #c0c0c0;
+text-align: -webkit-match-parent;
+display: list-item;
+line-height: 1.33em;
+}
+
+.node-type-simple-targeted-mobile div.field-name-body ul li span.nolink {
+display: block;
+padding: 8px;
+margin: -8px;
+background-repeat: no-repeat;
+background-position: right;
+line-height: 1.2em;
+text-decoration: none;
+}
+
+.node-type-simple-targeted-mobile div.field-name-body ul li a {
+position: relative;
+margin:-8px;
+padding: 8px 24px 10px 8px;
+display: block;
+background-repeat: no-repeat;
+background-position: right;
+line-height: 1.2em;
+text-decoration: none;
+background-image: url("/sites/default/files/action-arrow.png");
+}
+
+.node-type-simple-targeted-mobile div.field-name-body ul li a.phone, 
+.node-type-simple-targeted-mobile div.field-name-body ul li a.email {
+background-image: none !important;
+padding-right: 36px;
+}
+
+.node-type-simple-targeted-mobile a.nav-dropdown__label {
+display: none;
+}
+
+@media only screen and (max-width: 950px){.even > td{float:left;clear:left;border:none}}
+@media only screen and (max-width: 950px){.odd > td{float:left;clear:left;border:none}}
+

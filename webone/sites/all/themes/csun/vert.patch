@@ -1,0 +1,14 @@
+diff --git a/www/sites/default/themes/csun/sass/_base.scss b/www/sites/default/themes/csun/sass/_base.scss
+index 9c7c13d..9ac7d45 100644
+--- a/www/sites/default/themes/csun/sass/_base.scss
++++ b/www/sites/default/themes/csun/sass/_base.scss
+@@ -93,7 +93,8 @@ $tabs-border: #bbb;
+ @import "compass/utilities/general/clearfix"; // Better than Drupal's clearfix.
+ @import "compass/utilities/sprites"; // See http://compass-style.org/help/tutorials/spriting/
+ @import "compass/css3";     // Use one CSS3 mixin instead of multiple vendor prefixes.
+-@import "compass/typography/vertical_rhythm"; // Helps set up a vertical rhythm.
++//@import "compass/typography/vertical_rhythm"; // Helps set up a vertical rhythm.
++@import "vertical_rhythm"; // Pre-release verticaly_rhythm mixins.
+ @import "zen";              // Add the Zen Grids responsive layout mixins.
+ 
+ @import "custom";           // Import our custom mixins last.

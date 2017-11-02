@@ -1,0 +1,161 @@
+/**
+ * @file
+ * Positioning for responsive layout .
+ *
+ * Define CSS classes to create a table-free, 3-column, 2-column, or single
+ * column layout depending on whether blocks are enabled in the left or right
+ * columns.
+ *
+ * This layout uses the Zen Grids plugin for Compass: http://zengrids.com
+ */
+
+
+$panels-admin: false !default;
+
+.layout-csun {
+  position: relative;
+}
+
+@include breakpoint( $mq-large, $no-query: '.lt-ie9' ) {
+
+  .layout-csun {
+    @include zen-grid-container();
+
+    @if $panels-admin == false {
+      margin-left: auto; // Center the page.
+      margin-right: auto;
+      width: auto;
+      min-width: 600px;
+      max-width: 1152px;
+    }
+  }
+
+  .layout-csun--navbar {
+    @include zen-grid-container();
+
+    @if $panels-admin == false {
+      margin-left: auto; // Center the page.
+      margin-right: auto;
+      width: auto;
+      min-width: 600px;
+    }
+  }
+
+  // Let's use some placeholders for efficient rulesets.
+  /* MAB - I'm not sure whay Palentir changed content to columns as it uglifies the layout */ 
+  .layout-csun--header,
+  .layout-csun--header-right,
+  .layout-csun--supplementary,
+
+  /* .layout-csun--columns-left,
+  .layout-csun--columns-right,
+  .layout-csun--columns-both,
+  .layout-csun--columns-none,*/
+
+  .layout-csun--content-left,
+  .layout-csun--content-right,
+  .layout-csun--content-both,
+  .layout-csun--content-none,
+
+  .layout-csun--sidebar-featured,
+  .layout-csun--sidebar-left,
+  .layout-csun--sidebar-right,
+  .layout-csun--footer {
+    @include zen-grid-item-base();
+
+    @if $panels-admin {
+      padding: { // Add a little space between rows in the admin.
+        top: zen-half-gutter();
+        bottom: zen-half-gutter();
+      }
+    }
+  }
+
+  .layout-csun--supplementary,
+  .layout-csun--content-none,
+  .layout-csun--footer {
+    @include zen-grid-item(4, 1);
+  }
+
+  .layout-csun--header {
+    @include zen-grid-item(5, 1, $column-count: 8);
+  }
+
+  .layout-csun--header-right {
+    @include zen-grid-item(5, 4, $column-count: 8);
+  }
+
+  .layout-csun--supplementary {
+    @include zen-clear();
+  }
+
+  // Wrapper for all the columns (only needed for bg images.)
+  .layout-csun--columns-left,
+  .layout-csun--columns-right,
+  .layout-csun--columns-both,
+  .layout-csun--columns-none {
+    @include clearfix;
+    clear: both;
+    position: relative;
+  }
+
+  // The content column has a different class depending on optional sidebars.
+  .layout-csun--content-left {
+    @include zen-clear();
+    @include zen-grid-item(3, 2);
+  }
+
+  .layout-csun--content-right {
+    @include zen-clear();
+    @include zen-grid-item(3, 1);
+  }
+
+  .layout-csun--content-both {
+    @include zen-clear();
+    @include zen-grid-item(2, 2);
+  }
+
+  .layout-csun--content-none {
+    @include zen-clear();
+  }
+
+  .layout-csun--sidebar-featured {
+    @include zen-grid-item(1, 4, right);
+  }
+
+  .layout-csun--sidebar-left {
+    @include zen-clear(right);
+    @include zen-grid-item(1, 1);
+  }
+
+  .layout-csun--sidebar-right {
+    /* I had to change this from absolute to relative positioning in order to
+     * fix an issue where long right sidebars were getting clipped at the
+     * length of the primary content area
+     */
+    position: relative; /* position: absolute; */
+    top: 0;
+    left: 75%; /* right: 0px; */
+    width: 25%;
+  }
+
+  .layout-csun--sidebar-featured,
+  .layout-csun--sidebar-left,
+  .layout-csun--sidebar-right {
+    .panel-pane {
+      padding: {
+        left: zen-half-gutter();
+        right: zen-half-gutter();
+      }
+      margin: {
+        top: 20px;
+        bottom: 20px;
+      }
+    }
+  }
+
+  .layout-csun--footer {
+    @include zen-clear();
+  }
+
+}

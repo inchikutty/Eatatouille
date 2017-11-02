@@ -1,0 +1,17 @@
+/**
+ * @file
+ * Admin CSS for csun layout.
+ */
+
+@import "init";
+
+
+// Override the gutter width for admin pages.
+$zen-gutter-width:  4px;
+
+// Turn off the page centering for admin pages.
+$panels-admin: true;
+$breakpoint-no-query-fallbacks: false;
+
+// Now generate the entire layout.
+@import "csun-layout";
